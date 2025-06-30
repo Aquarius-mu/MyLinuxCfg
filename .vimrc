@@ -114,5 +114,3 @@ function TitleDet()
     endwhile
     call AddTitle()
 endfunction
-
-                                     
