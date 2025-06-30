@@ -9,6 +9,11 @@ Pluginfile '///home/sjd/3party/vimconfig/bundle/vim-fswitch'
 Pluginfile '///home/sjd/3party/vimconfig/bundle/vim-cpp-enhanced-highlight'
 call vundle#end()
 filetype plugin indent on
+" 常用的命令
+" :PluginList       - 列出所有已配置的插件
+" :PluginInstall  	 - 安装插件,追加 `!` 用以更新或使用 :PluginUpdate
+" :PluginSearch foo - 搜索 foo ; 追加 `!` 清除本地缓存
+" :PluginClean      - 清除未使用插件,需要确认; 追加 `!` 自动批准移除未使用插件
 
 " 设置行号
 set number
