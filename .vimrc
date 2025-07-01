@@ -48,7 +48,7 @@ set matchtime=1
 :map! <C-> <ESC>:q<CR>  
 
 " svn blame插件 v选中后按bm输出blame结果
-vmap bl :<C-U>!svn blame <C-R>=expand("%p") <CR> \| !sed -n <C-R>=line("'<") <CR>,<C-R>=line("'>") <CR>p<CR>
+vmap bl :<C-U>!svn blame <C-R>=expand("%p") <CR> \| sed -n <C-R>=line("'<") <CR>,<C-R>=line("'>") <CR>p<CR>
 
 " cpp vim增强版  需要插件vim-cpp-enhanced-highlight
 "let g:cpp_class_scope_highlight = 1  
