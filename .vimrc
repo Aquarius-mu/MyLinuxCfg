@@ -18,7 +18,7 @@ filetype plugin indent on
 " 设置行号
 set number
 " 取消行号
-:map! <C-n> <ESC>::set nonumber<CR
+:map! <C-n> <ESC>:set nonumber<CR
 
 " 语法高亮
 syntax on
@@ -42,13 +42,13 @@ set autoindent
 " 显示括号匹配
 set showmatch
 " 括号匹配时间为1
-setmatchtime=l
+set matchtime=l
 
 " ctrl + \ 推出文件  
-:map! <C-> <ESC>::q<CR>  
+:map! <C-> <ESC>:q<CR>  
 
 " svn blame插件 v选中后按bm输出blame结果
-vmap bl :<C-U>!svn blame <C-R>=expand("%p") <CR> \| sed -n <C-R>=line("'<") <CR>,<C-R>=line("'>") <CR>p<CR>  
+vmap bl :<C-U>!svn blame <C-R>=expand("%p") <CR> \| !sed -n <C-R>=line("'<") <CR>,<C-R>=line("'>") <CR>p<CR>
 
 " cpp vim增强版  需要插件vim-cpp-enhanced-highlight
 "let g:cpp_class_scope_highlight = 1  
