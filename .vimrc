@@ -45,7 +45,7 @@ set showmatch
 set matchtime=1
 
 " ctrl + \ 推出文件  
-:map! <C-> <ESC>:q<CR>  
+:map! <C-\> <ESC>:q<CR>  
 
 " svn blame插件 v选中后按bm输出blame结果
 vmap bl :<C-U>!svn blame <C-R>=expand("%p") <CR> \| sed -n <C-R>=line("'<") <CR>,<C-R>=line("'>") <CR>p<CR>
