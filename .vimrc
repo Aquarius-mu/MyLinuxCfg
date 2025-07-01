@@ -42,7 +42,7 @@ set autoindent
 " 显示括号匹配
 set showmatch
 " 括号匹配时间为1
-set matchtime=l
+set matchtime=1
 
 " ctrl + \ 推出文件  
 :map! <C-> <ESC>:q<CR>  
