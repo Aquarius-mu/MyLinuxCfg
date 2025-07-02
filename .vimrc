@@ -18,7 +18,7 @@ filetype plugin indent on
 " 设置行号
 set number
 " 取消行号
-:map! <C-n> <ESC>:set nonumber<CR
+:map! <C-n> <ESC>:set nonumber<CR>
 
 " 语法高亮
 syntax on
