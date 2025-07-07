@@ -3,7 +3,6 @@ set nocp          " 禁用兼容模式（避免加载系统配置）
 set nocompatible  " 同上（Vim 默认行为）
 filetype off 
 "let skip_defaults_vim = 1  " 跳过 /usr/share/vim/vimrc
-let g:python3_host_prog = '/usr/bin/python3'
 
 " 设置包括vundle和初始化相关的runtime path
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -95,7 +94,7 @@ set matchtime=1
 " ctrl + \ 推出文件  
 :map! <C-\> <ESC>:q<CR>  
 
-" svn blame插件 v选中后按bm输出blame结果
+" svn blame插件 v选中后按bm输出blame结果 非常好用
 vmap bl :<C-U>!svn blame <C-R>=expand("%p") <CR> \| sed -n <C-R>=line("'<") <CR>,<C-R>=line("'>") <CR>p<CR>
 
 " 设置高亮搜索  
