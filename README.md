@@ -1,2 +1,8 @@
-# MyVimrc
-从征途2带出来，并且有自己改良版本的
+# MyLinuxCfg
+经过了一家专门linux下vim编程后公司，总结而来的
+
+# Attend
+
+Vundle.vim插件管理工具需要下载
+Yggdroot/LeaderF vim插件需要vim中有python环境
+查看 python --version
