@@ -3,6 +3,8 @@ set nocp          " 禁用兼容模式（避免加载系统配置）
 set nocompatible  " 同上（Vim 默认行为）
 filetype off 
 "let skip_defaults_vim = 1  " 跳过 /usr/share/vim/vimrc
+" 强制每次打开后，就是上次记录的位置
+autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | execute "normal! g`\"" | endif
 
 " 设置包括vundle和初始化相关的runtime path
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -59,6 +61,7 @@ let g:Lf_ShortcutF = '<C-P>'
 noremap <leader>f :LeaderfSelf<cr>
 noremap <leader>fm :LeaderfMru<cr>
 noremap <leader>ff :LeaderfFunction<cr>
+noremap <leader>fg :LeaderfTag<cr>
 let g:Lf_HideHelp = 1
 let g:Lf_UseCache = 0
 let g:Lf_UseVersionControlTool = 0
