@@ -3,6 +3,6 @@
 
 # Attend
 
-Vundle.vim插件管理工具需要下载
+Vundle.vim插件管理工具需要下载  
 Yggdroot/LeaderF vim插件需要vim中有python环境
-查看 python --version
+查看 python --version，python2或python3有其一就可
