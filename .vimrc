@@ -129,7 +129,7 @@ function AddTitle()
     call append(03,"// 作者: sunjiadong")
     call append(04,"//")
     call append(05,"// 修订: ")
-    call append(06,"// - [".strftime("%Y-%m-%d")."] 增加XXX功能 (by sunjiadong)")
+    call append(06,"// - [".strftime("%Y-%m-%d")."] 增加XXX功能 (by Aquaruis)")
     call append(07,"//")
     echohl warningMsg | echo "Successful!" | echohl None
 endfunction
