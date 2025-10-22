@@ -137,7 +137,7 @@ endfunction
 " 更新文件头
 function UpdateTitle(line)
     normal m'
-    call append(a:line,"// - [".strftime("%Y-%m-%d").") 本次做了XXX修改 (by sunjiadong)")
+    call append(a:line,"// - [".strftime("%Y-%m-%d").") 本次做了XXX修改 (by Aquaruis)")
     normal ''
     echohl warningMsg | echo "Successful in updating the copy right." | echohl None
 endfunction
